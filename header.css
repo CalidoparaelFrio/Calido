@@ -244,7 +244,7 @@
             }
             .socialFollow {
                 width: 100%;
-                margin-left: 125px;
+                margin-left: 140px;
                 display: flex;
             }
             .img-modal {
@@ -263,5 +263,7 @@
             }
             .tabsMobile {
                 width: 100vw;
+            }.socialFollow {
+                margin-left: 95px; 
             }
         }
