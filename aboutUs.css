@@ -1,0 +1,225 @@
+/* -------------------ABOUT US------------------- */
+
+.container-us {
+    border-top: solid 5px #373d4b;
+    width: 100%;
+    height: 100%;
+    max-width: 1600px;
+    background: hsl(0, 0%, 94%);
+    position: relative;
+}
+
+.us {
+    max-width: 1600px;
+    height: 300px;
+    background-image: url(https://i.ibb.co/mGzWYyZ/snow-woman-jpg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-us {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.p-us {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+}
+
+.content-us {
+    max-width: 1600px;
+    height: 125px;
+    text-align: center;
+}
+
+.content-us1 {
+    justify-content: center;
+    width: 38%;
+    text-align: center;
+    margin: 5em auto;
+}
+
+.p-us2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+.p-us3 {
+    padding-top: 30px;
+    text-align: center;
+    color: #bc3691;
+    font-size: 2em;
+}
+
+.us-sections {
+    max-width: 1600px;
+    background: #d2d6d8;
+    height: 400px;
+}
+
+.us-section1 {
+    padding-top: 30px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+.us-section2 {
+    padding-top: 30px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionA,
+.sectionB,
+.sectionC {
+    width: 200px;
+    height: 100px;
+    border-width: 8px;
+    border-style: solid;
+    justify-content: center;
+    text-align: center;
+    margin-left: -20em;
+    margin-right: -20em;
+}
+
+.sectionA {
+    border-color: #3cbcda;
+}
+
+.sectionB {
+    border-color: #94c372;
+}
+
+.sectionC {
+    border-color: #bc3691;
+}
+
+.img-section-icon {
+    max-width: 60px;
+    max-height: 60px;
+    display: flex;
+    padding-left: 68px;
+    padding-top: 15px;
+}
+
+.sectionA1,
+.sectionB1,
+.sectionC1 {
+    width: 200px;
+    height: 50px;
+    border-bottom: 3px solid;
+    justify-content: center;
+    text-align: center;
+    margin-left: -20em;
+    margin-right: -20em;
+}
+
+
+/* ----------------MOBILE SE/X SOBRE NOSOTROS---------------- */
+
+@media (max-width: 600px) {
+    .mainAbout {
+        margin-top: 50px;
+    }
+    .p-us {
+        font-size: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .content-us1 {
+        width: 75%;
+        margin: 3em auto;
+    }
+    .us-sections {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        padding-bottom: 30px;
+    }
+    .us-section1 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        justify-content: center;
+        margin-left: 250px;
+        margin-top: 60px;
+    }
+    .us-section2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .sectionA,
+    .sectionB,
+    .sectionC {
+        width: 150px;
+    }
+    .sectionA1,
+    .sectionB1,
+    .sectionC1 {
+        width: 130px;
+        margin-left: -9em;
+        text-align: -webkit-auto;
+        margin-top: 10px;
+    }
+    .sectionA11 {
+        margin-top: -20px;
+    }
+    .img-section-icon {
+        padding-left: 45px;
+    }
+    .p-us3 {
+        position: absolute;
+        font-size: 1.5em;
+        margin-top: 5px;
+        margin-left: 35px;
+    }
+}
+
+
+/* ----------------MOBILE Iphone5/SE SOBRE NOSOTROS---------------- */
+
+@media (max-width: 320px) {
+    .us-sections {
+        margin-top: 100px;
+    }
+    .sectionA,
+    .sectionB,
+    .sectionC {
+        width: 120px;
+    }
+    .img-section-icon {
+        padding-left: 30px;
+    }
+    .sectionA1,
+    .sectionB1,
+    .sectionC1 {
+        width: 100px;
+        margin-left: -12em;
+        text-align: -webkit-auto;
+        margin-top: 10px;
+        font-size: .8em;
+    }
+    .sectionA11 {
+        margin-top: -20px;
+    }
+    .p-us3 {
+        position: absolute;
+        font-size: 1.3em;
+        margin-top: 5px;
+        margin-left: 35px;
+    }
+}

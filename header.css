@@ -1,0 +1,267 @@
+        /* -------------------------MENU------------------------------ */
+        
+        @font-face {
+            font-family: Kiona;
+            src: url("fuentes/Kiona-Regularttf");
+        }
+        
+        @font-face {
+            font-family: Oprah;
+            src: url("fuentes/dream\ orphans.ttf");
+        }
+        
+        .headerIndexWeb {
+            margin-top: 80px;
+        }
+        
+        header {
+            position: fixed;
+            width: 100%;
+            height: 70px;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+            background: #c3d4db;
+            opacity: 0.92;
+            z-index: var(--z-modal);
+            border-bottom: 10px solid black;
+            top: 0;
+        }
+        
+        .icon1 {
+            position: absolute;
+            width: 100%;
+            padding-left: .3em;
+            padding-top: .2em;
+            z-index: var(--z-modal);
+            justify-content: center;
+            filter: contrast(2);
+        }
+        
+        .div-icon {
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: 7px;
+            left: 1380px;
+            z-index: var(--z-fixed);
+            justify-content: center;
+        }
+        
+        .title1 {
+            position: absolute;
+            top: -0.2em;
+            left: 2em;
+            font-style: italic;
+            color: #373d4b;
+            font-size: 3em;
+            font-weight: 1000;
+            font-family: Oprah;
+        }
+        
+        .nav {
+            padding-top: .2em;
+            padding-left: 45em;
+            font-size: 1.1em;
+        }
+        
+        .menu {
+            list-style: none;
+            display: flex;
+            background: none;
+        }
+        
+        .menu-item {
+            position: relative;
+            display: flex;
+            font-family: 'Alatsi';
+        }
+        
+        .menu-link {
+            text-decoration: solid;
+            color: #fff;
+            padding: .6rem 2rem .6rem 4rem;
+            font-size: 1.4em;
+            font-style: normal;
+        }
+        
+        .menu-link {
+            transition-duration: .5s;
+            transition: all .5s ease-in;
+            background: none;
+        }
+        
+        .menu-link:hover {
+            transform: scale(1.2);
+        }
+        
+        .tabsMobile,
+        .menuHamb {
+            display: none;
+        }
+        /* ----------------RESOLUCION MOBILE 600px---------------- */
+        
+        @media (max-width: 600px) {
+            /* ----------------HEADER---------------- */
+            .mainAbout {
+                margin-top: 50px;
+            }
+            .header {
+                position: fixed;
+                width: 600px;
+                max-width: 600px;
+                height: 50px;
+                margin: 0 auto;
+                padding: 0;
+                border: 0;
+                background: #c3d4db;
+                /* opacity: 0.7; */
+                z-index: var(--z-modal);
+                border-bottom: 4px solid black;
+            }
+            .title1 {
+                position: absolute;
+                top: -.2em;
+                left: 2.3em;
+                color: #373d4b;
+                font-size: 2em;
+                font-weight: 1000;
+                font-style: normal;
+                font-family: Oprah;
+            }
+            .div-icon {
+                width: 30px;
+                height: 30px;
+                background: transparent;
+                border-radius: 50%;
+                position: absolute;
+                top: 7px;
+                left: 10px;
+                z-index: var(--z-fixed);
+                justify-content: center;
+            }
+            .icon1 {
+                position: absolute;
+                width: 100%;
+                padding-left: .3em;
+                padding-top: .2em;
+                z-index: var(--z-modal);
+                justify-content: center;
+                filter: contrast(2);
+            }
+            /* -----------MENU DINAMICO--------------- */
+            .tabsM {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                position: absolute;
+            }
+            .menuHamb {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                cursor: pointer;
+                transition: .4s ease-out;
+                margin-left: 315px;
+            }
+            .line1,
+            .line2,
+            .line3 {
+                width: 42px;
+                height: 4px;
+                background: #333;
+                margin: 3px 0;
+                border-radius: 10px;
+                transition: .4s ease-out;
+            }
+            .change1.line1.activeMenu {
+                margin-top: 10px;
+                transform: rotate(45deg) translate(-7px, -8px);
+                position: absolute;
+                background: black;
+            }
+            .change2.line2.activeMenu {
+                opacity: 0;
+            }
+            .change3.line3.activeMenu {
+                margin-top: 10px;
+                transform: rotate(-45deg) translate(8px, -7px);
+                position: absolute;
+                background: black;
+            }
+            .tabsMobile {
+                position: absolute;
+                width: 100vw;
+                height: 300px;
+                margin-top: 50px;
+                top: 0;
+                flex-direction: column;
+                background: white;
+                font-size: 2em;
+            }
+            .show.tabsMobile.activeMenu {
+                display: flex;
+            }
+            .menuMobile__item,
+            .menuMobile__item_social {
+                width: 100%;
+                margin: 15px auto;
+                position: relative;
+                background-color: white;
+                border-bottom: black solid 1px;
+            }
+            .menuMobile__item__link {
+                background-color: white;
+            }
+            .menuMobile__item_social {
+                margin-top: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .menuMobile__item,
+            a {
+                text-align: center;
+            }
+            .menuMobile__item__link,
+            a {
+                font-size: 1.4rem;
+            }
+            .followtitle {
+                font-size: 1.5rem;
+                justify-content: center;
+                text-align: center;
+            }
+            .socialFollow {
+                width: 100%;
+                margin-left: 125px;
+                display: flex;
+            }
+            .img-modal {
+                width: 40px;
+                padding-top: .5em;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0rem;
+            }
+        }
+        /* ----------------MOBILE SE SOBRE NOSOTROS---------------- */
+        
+        @media (max-width: 320px) {
+            .menuHamb {
+                margin-left: 255px;
+            }
+            .tabsMobile {
+                width: 100vw;
+            }
+        }

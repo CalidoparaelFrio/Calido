@@ -1,0 +1,154 @@
+body {
+    background-color: #f3f5f9;
+}
+
+.wrapper {
+    margin-top: 80px;
+    display: flex;
+    position: relative;
+    height: 500px;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper .sidebar {
+    width: 200px;
+    height: 44%;
+    background: #4b4276;
+    padding: 30px 0px;
+    position: fixed;
+}
+
+.wrapper .sidebar h2 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wrapper .sidebar ul li {
+    padding: 30px;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+    color: #bdb8d7;
+    display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+    width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+    background-color: #6c6e79;
+}
+
+.wrapper .sidebar ul li:hover a {
+    color: #fff;
+}
+
+.wrapper .main_content {
+    width: 100%;
+    margin-left: 200px;
+}
+
+.wrapper .main_content .headerQuestion {
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    border-bottom: 1px solid #e0e4e8;
+    font-size: 2em;
+}
+
+.wrapper .main_content .info {
+    margin: 20px;
+    margin-top: 40px;
+    color: #717171;
+    line-height: 25px;
+}
+
+.wrapper .main_content .info div {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    height: 60px;
+}
+
+.pago {
+    position: absolute;
+    padding-left: 800px;
+    margin-top: 0;
+}
+
+.img-pago {
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.Questions1,
+.pagoMobile {
+    display: none;
+}
+
+
+/* ----------------MOBILE X/SE PREGUNTAS---------------- */
+
+@media (max-width: 600px) {
+    body {
+        font-size: .7em;
+        background: #efefef;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+    .Questions1,
+    .pagoMobile {
+        display: inline-block;
+    }
+    .wrapper,
+    .Button-contact,
+    .pago {
+        display: none;
+    }
+    .Questions1 {
+        border-bottom: black solid 2px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .QuestionScroll,
+    .QuestionScroll2,
+    .QuestionScroll3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    .title-Question {
+        font-size: 1.5em;
+    }
+    .textQ {
+        margin-bottom: 35px;
+        font-size: 1.1em;
+        width: 100%;
+    }
+    .pagoMobile {
+        top: 40px;
+        width: 100%;
+        margin-top: 160px;
+        position: relative;
+        margin-top: 0;
+        text-align: center;
+    }
+    .img-pago {
+        width: 300px;
+        height: 400px;
+        position: relative;
+    }
+}
