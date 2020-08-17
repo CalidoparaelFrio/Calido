@@ -58,7 +58,7 @@
         
         .title1 {
             position: absolute;
-            top: -0.2em;
+            top: .5em;
             left: 2em;
             color: #373d4b;
             font-size: 3em;
@@ -130,7 +130,7 @@
             }
             .title1 {
                 position: absolute;
-                top: -.2em;
+                top: .5em;
                 left: 2.3em;
                 color: #373d4b;
                 font-size: 2em;
