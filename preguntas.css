@@ -127,8 +127,6 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        text-align: center;
-        align-items: center;
     }
     .title-Question {
         font-size: 1.5em;
@@ -139,7 +137,7 @@ ul {
         width: 100%;
     }
     .pagoMobile {
-        top: 40px;
+        top: 20px;
         width: 100%;
         margin-top: 160px;
         position: relative;

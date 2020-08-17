@@ -81,13 +81,13 @@
     @media (max-width: 600px) {
         /* ----------------FOOTER---------------- */
         .footer1 {
-            margin-top: -70px;
+            margin-top: -0px;
         }
         .footer-section1 {
             flex-direction: column;
             text-align: center;
             font-size: 10px;
-            margin-top: 100px;
+            margin-top: 40px;
         }
         .foot1,
         .foot2,
@@ -96,6 +96,11 @@
         }
         .title-footer {
             margin-left: 0;
+            font-size: .9rem;
+        }
+        .title-footer1,
+        .title-footer2 {
+            font-size: .9rem;
         }
         .footScroll,
         .footScroll2,
@@ -158,6 +163,7 @@
         .list-footer2,
         a {
             font-size: .8rem;
+            font-family: Kiona;
         }
         .textfoot {
             display: none;

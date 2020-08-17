@@ -12,13 +12,9 @@
     --z-modal: 1000;
 }
 
-* {
-    font-family: 'Alatsi';
-}
-
 @font-face {
     font-family: Kiona;
-    src: url("fuentes/Kiona-Regularttf");
+    src: url("fuentes/Kiona-Regular.ttf");
 }
 
 body {
@@ -30,7 +26,8 @@ body {
     justify-content: center;
     padding: 0;
     border: 0;
-    font-family: 'Alatsi';
+    font-family: Kiona;
+    font-weight: bolder;
 }
 
 
@@ -115,6 +112,8 @@ body {
     font-weight: 700px;
     color: #fff;
     text-decoration: none;
+    font-family: Kiona;
+    font-weight: bold;
 }
 
 
@@ -163,7 +162,8 @@ body {
     letter-spacing: 1px;
     line-height: 2em;
     padding-left: 1rem;
-    font-family: alatsi;
+    font-family: Kiona;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -183,7 +183,6 @@ body {
     background: black;
     color: white;
     text-align: center;
-    /* //  padding: 5px; */
     font-weight: 800;
     display: block;
     position: relative;
@@ -198,6 +197,8 @@ body {
     margin: 0;
     font-size: 14px;
     padding: 10px;
+    font-family: Kiona;
+    font-weight: bold;
 }
 
 .bannerDuoImages {
@@ -225,6 +226,8 @@ body {
 .promoTitle {
     margin: 0 auto;
     transition: all .5 ease-in-out;
+    font-family: Kiona;
+    font-weight: bold;
 }
 
 .promoTitle:hover {
@@ -270,9 +273,8 @@ a {
     padding-right: 120px;
     padding-left: 120px;
     font-size: 1.5em;
-    /* text-shadow: 1px 1px black; */
-    /* text-decoration-line: underline; */
-    /* text-decoration-style: double; */
+    font-family: Kiona;
+    font-weight: bold;
 }
 
 .Modal-box {
@@ -435,8 +437,12 @@ a {
 
 /* // --------------GLIDE------------------- */
 
-.glidespace {
-    top: 10px;
+.Buysafe {
+    margin-top: 40px;
+}
+
+.Buysafe2 {
+    margin-top: 0;
 }
 
 
@@ -520,7 +526,6 @@ a {
 }
 
 .active {
-    background: #efefef;
     z-index: var(--z-tooltip);
 }
 
@@ -528,6 +533,8 @@ a {
     border: 1px solid #ccc;
     position: relative;
     z-index: var(--z-normal);
+    background-image: url('https://i.ibb.co/VLJ1rch/fondo4.jpg');
+    background-size: cover;
 }
 
 .panels__item {
@@ -665,14 +672,14 @@ a {
 @media (max-width: 600px) {
     body {
         font-size: .7em;
-        background: #efefef;
+        background-image: url('https://i.ibb.co/VLJ1rch/fondo4.jpg');
+        background-size: cover;
         width: 100%;
         max-width: 600px;
         margin: auto;
         justify-content: center;
         padding: 0;
         border: 0;
-        font-family: 'Alatsi';
     }
     main {
         margin-top: 80px;
@@ -725,6 +732,7 @@ a {
         width: 100%;
         justify-content: center;
         align-items: center;
+        background-image: url('https://i.ibb.co/VLJ1rch/fondo4.jpg');
     }
     .bolsa-1M {
         width: 80%;
@@ -753,6 +761,8 @@ a {
     .p-usbolsa {
         margin: 20px 20px;
         font-size: 1.1em;
+        font-family: Kiona;
+        font-weight: bold;
     }
     /* ----------------PROMO---------------- */
     .bannerDuoImages {
@@ -764,6 +774,7 @@ a {
         padding: 0;
         transition: all 1s ease-in-out;
         padding-top: 1em;
+        background-image: url('https://i.ibb.co/VLJ1rch/fondo4.jpg');
     }
     .img-ofert {
         transition: all .5s ease-in-out;
@@ -785,6 +796,7 @@ a {
     }
     .price-ofert {
         padding-top: 75px;
+        background-image: url('https://i.ibb.co/VLJ1rch/fondo4.jpg');
     }
     .bu-color {
         width: 70px;
