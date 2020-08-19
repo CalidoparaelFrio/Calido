@@ -250,7 +250,7 @@
             }
             .socialFollow {
                 width: 100%;
-                margin-left: 140px;
+                margin-left: 125px;
                 display: flex;
             }
             .titleFollow {
@@ -268,12 +268,21 @@
         
         @media (max-width: 320px) {
             .menuHamb {
-                margin-left: 255px;
+                margin-left: 240px;
             }
             .tabsMobile {
                 width: 100vw;
             }
             .socialFollow {
                 margin-left: 95px;
+            }
+        }
+        
+        @media (max-width: 330px) {
+            .menuHamb {
+                margin-left: 240px;
+            }
+            .socialFollow {
+                margin-left: 100px;
             }
         }

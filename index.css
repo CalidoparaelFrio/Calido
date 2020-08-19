@@ -374,6 +374,11 @@ a {
     left: 10px;
 }
 
+.agotado {
+    color: red !important;
+    font-weight: bold;
+}
+
 .ofert-button,
 .bu-color {
     width: 120px;
