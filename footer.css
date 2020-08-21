@@ -58,6 +58,11 @@
         margin-top: -1em;
     }
     
+    .img-icon3 {
+        max-width: 50px;
+        max-height: 45px;
+    }
+    
     .title-footer {
         margin-left: 15px;
     }
