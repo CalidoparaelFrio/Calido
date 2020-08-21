@@ -189,6 +189,25 @@ const showPay2 = () => {
 }
 showPay2()
 
+const showPay3 = () => {
+    let lineScroP = document.querySelector('.footScroll2');
+    let changeP = document.querySelector('.showPay3');
+    let menuOpen = false;
+    lineScroP.addEventListener('click', () => {
+        console.log('escuchaaaaaa')
+        if (!menuOpen) {
+
+            changeP.classList.add('activePay');
+            menuOpen = true;
+        } else {
+            changeP.classList.remove('activePay');
+            menuOpen = false;
+        }
+    })
+
+}
+showPay3()
+
 const showQuestions = () => {
     let lineScroQ = document.querySelector('.footScroll3');
     let changeQ = document.querySelector('.showQuestion');

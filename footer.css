@@ -27,11 +27,16 @@
         flex-direction: row;
     }
     
-    .icons-flex {
+    .icons-flex,
+    .icons-flex2 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    
+    .icons-flex2 {
+        padding-bottom: 10px;
     }
     
     .img-initial {
@@ -126,7 +131,8 @@
         }
         .list-footer,
         .list-footer2,
-        .icons-flex {
+        .icons-flex,
+        .icons-flex2 {
             display: none;
         }
         .showContact.list-footer.activeContact {
@@ -136,6 +142,9 @@
             display: flex;
         }
         .showPay2.icons-flex.activePay {
+            display: flex;
+        }
+        .showPay3.icons-flex2.activePay {
             display: flex;
         }
         .showQuestion.list-footer2.activeQuestion {
