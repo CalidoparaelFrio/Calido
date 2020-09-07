@@ -10,6 +10,15 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+    --CAzulrey: #1d36b2;
+    --CMostaza: #e5c981;
+    --CCanela: #97636c;
+    --CRojofuerte: #a51b37;
+    --Cgris: #a4a4ad;
+    --Cblanco: #efefef;
+    --Crosaclaro: #f5d8d6;
+    --Cazuloscuro: #192a61;
+    --CBeige: #f5f5dc;
 }
 
 @font-face {
@@ -421,9 +430,91 @@ a {
     text-transform: uppercase;
 }
 
+.infoColor-button {
+    height: 25.5px;
+}
+
 .info-button {
-    width: 95%;
     height: 80px;
+}
+
+.ColorAval {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colorAvalible {
+    width: 50%;
+    height: 100%;
+    margin-top: -1%;
+}
+
+.colorsection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.colorA {
+    background: var(--CMostaza);
+}
+
+.colorB {
+    background: var(--CRojofuerte);
+}
+
+.colorC {
+    background: var(--CCanela);
+}
+
+.colorA1 {
+    background: var(--Cblanco);
+}
+
+.colorB1 {
+    background: var(--CAzulrey);
+}
+
+.colorC1 {
+    background: var(--Cgris);
+}
+
+.colorA2 {
+    background: var(--Crosaclaro);
+}
+
+.colorB2 {
+    background: var(--Cazuloscuro);
+}
+
+.colorC2 {
+    background: var(--CBeige);
+}
+
+.colorA,
+.colorB,
+.colorC,
+.colorA1,
+.colorB1,
+.colorC1,
+.colorA2,
+.colorB2,
+.colorC2 {
+    width: 10%;
+    height: 50%;
+    margin-top: -1%;
+    border-radius: 50%;
+}
+
+.info-button,
+.infoColor-button {
+    width: 95%;
     left: 5%;
     display: flex;
     justify-content: center;
@@ -639,6 +730,11 @@ a {
 
 .CatalogItem:hover>.info-button {
     transform: translateY(-50px);
+    opacity: 1;
+}
+
+.CatalogItem:hover>.infoColor-button {
+    transform: translateY(-15px);
     opacity: 1;
 }
 
@@ -892,6 +988,16 @@ a {
         width: 90%;
         height: 80px;
         left: 10%;
+    }
+    .infoColor-button {
+        left: 10%;
+    }
+    .colorAvalible {
+        width: 50%;
+    }
+    .colorsection {
+        width: 55%;
+        justify-content: space-evenly;
     }
     .description {
         margin: .5rem .8rem .5rem 1.6rem;
