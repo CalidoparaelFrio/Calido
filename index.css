@@ -506,7 +506,7 @@ a {
 .colorA2,
 .colorB2,
 .colorC2 {
-    width: 10%;
+    width: 15%;
     height: 50%;
     margin-top: -1%;
     border-radius: 50%;
@@ -987,10 +987,10 @@ a {
     .info-button {
         width: 90%;
         height: 80px;
-        left: 10%;
+        left: 9%;
     }
     .infoColor-button {
-        left: 10%;
+        left: 9.5%;
     }
     .colorAvalible {
         width: 50%;
