@@ -506,7 +506,7 @@ a {
 .colorA2,
 .colorB2,
 .colorC2 {
-    width: 15%;
+    width: 10%;
     height: 50%;
     margin-top: -1%;
     border-radius: 50%;
@@ -998,6 +998,18 @@ a {
     .colorsection {
         width: 55%;
         justify-content: space-evenly;
+    }
+    .colorA,
+    .colorB,
+    .colorC,
+    .colorA1,
+    .colorB1,
+    .colorC1,
+    .colorA2,
+    .colorB2,
+    .colorC2 {
+        width: 15%;
+        height: 50%;
     }
     .description {
         margin: .5rem .8rem .5rem 1.6rem;
