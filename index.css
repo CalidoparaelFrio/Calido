@@ -10,6 +10,8 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+    --z-pulicidad: 2000;
+    --z-priority: 3000;
     --CAzulrey: #1d36b2;
     --CMostaza: #e5c981;
     --CCanela: #97636c;
@@ -291,6 +293,68 @@ a {
     font-size: 1.5em;
     font-family: Kiona;
     font-weight: bold;
+}
+
+.modal-promo {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: var(--z-pulicidad);
+    top: 0;
+    left: 0;
+    display: flex;
+    animation: modal-promo 1s 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content-promo {
+    margin: auto;
+    width: auto;
+    height: 80%;
+}
+
+.img-promoP {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#cerrar {
+    display: none;
+}
+
+#cerrar+label {
+    position: fixed;
+    color: var(--Cblanco);
+    font-size: 30px;
+    z-index: var(--z-pulicidad);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    right: 10px;
+    cursor: pointer;
+    z-index: var(--z-priority);
+    left: 60%;
+    top: 5%;
+    animation: modal-promo 1s 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cerrar:checked+label,
+#cerrar:checked~.modal-promo {
+    display: none;
+}
+
+@keyframes modal-promo {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .Modal-box {
@@ -812,6 +876,13 @@ a {
     }
     main {
         margin-top: 80px;
+    }
+    #cerrar+label {
+        font-size: 35px;
+        left: 85%;
+    }
+    .img-promoP {
+        height: 90%;
     }
     /* ----------------GLIDE SLIDE---------------- */
     .glide {
