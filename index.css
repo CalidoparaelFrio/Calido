@@ -748,6 +748,17 @@ a {
     margin-bottom: 30px;
 }
 
+.new {
+    width: 10%;
+    height: 4%;
+    position: absolute;
+    background: crimson;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 90%;
+}
+
 .img-catalog {
     transition: all .25s ease;
     max-width: 500px;
@@ -1046,6 +1057,11 @@ a {
         width: 45%;
         height: fit-content;
         margin-right: 15px;
+    }
+    .new {
+        width: 20%;
+        height: 5%;
+        left: 80%;
     }
     .price {
         padding-right: 0;
