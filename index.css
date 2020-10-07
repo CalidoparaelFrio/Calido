@@ -338,7 +338,7 @@ a {
     right: 10px;
     cursor: pointer;
     z-index: var(--z-priority);
-    left: 60%;
+    left: 80%;
     top: 5%;
     animation: modal-promo 1s 2s forwards;
     visibility: hidden;
