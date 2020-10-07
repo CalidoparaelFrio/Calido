@@ -893,7 +893,10 @@ a {
         left: 85%;
     }
     .img-promoP {
-        height: 90%;
+        height: 55%;
+        width: 90%;
+        padding-left: 5%;
+        padding-top: 5%;
     }
     /* ----------------GLIDE SLIDE---------------- */
     .glide {
